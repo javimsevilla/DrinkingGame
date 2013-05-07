@@ -1,6 +1,9 @@
 var didPush = false;
+var beep = false;
+var smbdPushed = false;
 function cambiarColor(id) {
-	if(didPush){
+	if(didPush && beep && !smbdPushed){
+	  smbdPushed = true;
 	  var cuadro = document.getElementById(id);
 	  //var color = cuadro.style.backgroundColor;
 	  cuadro.style.backgroundColor = "#000";
@@ -8,6 +11,7 @@ function cambiarColor(id) {
 	  	document.getElementById("player2").innerHTML = "<br \><div id=\"normal\"><h1>Drink! (don't be a pussy)</h1></div>"
 	  else document.getElementById("player1").innerHTML = "<br \><h1 id=\"reverse\">Drink! (don't be a pussy)</h1>"
 	  }
+	  else location.reload();
 	}
 	
 function startGame(id) {
@@ -19,6 +23,8 @@ function startGame(id) {
 function PlaySound() {
   var snd = new Audio("beep.wav"); // buffers automatically when created
   didPush = true;
-  var time = Math.floor((Math.random()*10)+1);
-  setTimeout(function(){snd.play();},3000);
+  //var time = Math.floor((Math.random()*10)+1);
+  var time = Math.floor((Math.random()*8)+3);
+  //time = 1; //debug mode
+  setTimeout(function(){beep = true; snd.play();},time*1000);
   }
