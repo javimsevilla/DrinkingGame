@@ -24,7 +24,7 @@ function PlaySound() {
   var snd = new Audio("beep.wav"); // buffers automatically when created
   didPush = true;
   //var time = Math.floor((Math.random()*10)+1);
-  var time = Math.floor((Math.random()*8)+3);
-  //time = 1; //debug mode
+  var time = Math.floor((Math.random()*9)+2);
+  time = 1; //debug mode
   setTimeout(function(){beep = true; snd.play();},time*1000);
   }
