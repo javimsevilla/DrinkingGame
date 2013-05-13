@@ -1,25 +1,111 @@
-*{
-margin: 0;
-padding: 0;}
+/* --------------------
+  Estilos compartidos 
+  -------------------- */
 
-html,body {
-  height: 99%;
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
 }
 
-h1{ text-align: center;
-	vertical-align: center;}
+html,
+body {
+	height: 99%;
+}
+
+/*-----------------------------------
+  Estilos para la página principal
+  -----------------------------------*/
+
+.main {
+	color: #515151;
+	font-family: "Arial Black", Helvetica, sans-serif;
+}
+
+.logo {
+	width: 80%;
+	margin: 0 auto;
+	max-width: 480px;
+}
+
+.logo img {
+	max-width: 100%;
+	min-width: 100%;
+}
+
+#tittle {
+	background-color: #fff;
+	margin-top: 1em;
+}
+
+#tittle h1 {
+	color: #FED872;
+	padding: 0.2em;
+	text-shadow: 1px 1px 3px #000;
+	filter: dropshadow(color=#000, offx=2, offy=2);
+}
+
+.boton-jugar {
+	font-size: 2em;
+	display: block;
+	text-decoration: none;
+	background-color: #00CCCC;
+	-webkit-box-shadow: inset 0px 1px 2px 0px #fff;
+	box-shadow: inset 0px 1px 2px 0px #fff;
+	-webkit-border-radius: 5px;
+    border-radius: 5px;
+	border: 1px solid #008080;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	color: #fff;
+}
+
+.boton-jugar:active {
+	background-color: #f00;
+}
+
+#reglas {
+	font-family: Arial, Helvetica, sans-serif;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 1em;
+	padding-bottom: 1em;
+}
+
+#reglas ul {
+	margin-left: 2em;
+}
+
+#reglas li {
+	font-size: small;
+}
+
+#reglas h2:nth-child(3) {
+	margin-top: 0.8em;
+}
+
+/*---------------------------
+  tex para el juego
+ ----------------------------*/
+
+h1 { 
+	text-align: center;
+	vertical-align: center;
+}
+
 .gamezone {
-  display: block;
-  width:100%;
-  height: 50%;
-  
+	display: block;
+	width:100%;
+	height: 50%;
 }
 
 #reverse{
--webkit-transform: rotate(180deg);
--moz-transform: rotate(180deg);
--o-transform: rotate(180deg);
-writing-mode: lr-tb;
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	writing-mode: lr-tb;
 }
 
 #normal{
@@ -30,13 +116,13 @@ writing-mode: lr-tb;
 }
 
 #player1{
-  background-color: #f78f8f;
-  border-bottom: 4px solid;
-
+	background-color: #f78f8f;
+	border-bottom: 4px solid;
+}
 
 #player2{
-  position: relative;
-  background-color: #0f0;
+	position: relative;
+	background-color: #0f0;
 }
 
 #button{
@@ -47,10 +133,4 @@ writing-mode: lr-tb;
 	height: 50px;
 	background-color: white;
 	z-index: 9;
-}
-
-#img{
-	 width="5%"
-	 height="5%"
-
 }

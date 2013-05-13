@@ -2,33 +2,34 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Document</title>
+  <title>Pulsa primero, bebe el último</title>
   <link rel="stylesheet" href="css/style.css"/>
   <script src="js/cambiarcolor.js"></script> 
-  
 </head>
-<body>
+<body class="main">
+
   <div id="tittle">
-  	<img src="img/beer.jpg" alt="drinking game" id="img" width="10%" height="10%">
-  	<h1>Pulsa primero, bebe el último!</h1>
+  	<div class="logo">
+     <img src="img/beer.png" alt="drinking game"> 
+    </div>
+  	<h1>¡Pulsa primero, bebe el último!</h1>
   </div>
-  <div id="boton">
-  	<a href="game.html" target="_self"> <input type="button" name="boton" value="JUGAR" /> </a>
-  </div>
-  <div>
+
+  <a href="game.html" class="boton-jugar">JUGAR</a>
+
+  <div id="reglas">
   	<h2>Reglas del juego:</h2>
-  	<ol>
+    <ul>
   		<li>Aqui no valen chupitos de mariquita</li>
   		<li>El último que pulse debe beber</li>
   		<li>La partida no acaba hasta que uno de los dos acaba potando</li>
-  	</ol>
-  	<br>
+    </ul>
   	<h2>Instrucciones del juego:</h2>
-  	<ol>
+    <ul>
   		<li>Cuando oigas un pitido pulsa antes que tu adversario</li>
   		<li>El último que pulse debe beber</li>
   		<li>Toca la pantalla para volver a empezar</li>
-  	</ol>
+    </ul>
   </div>
 </body>
 </html>
