@@ -17,14 +17,18 @@ function cambiarColor(id) {
 function startGame(id) {
 	var boton = document.getElementById(id);
 	boton.style.display = "none";
-	PlaySound("sound1");
+	PlaySound();
 }
 
 function PlaySound() {
-  var snd = new Audio("beep.wav"); // buffers automatically when created
-  didPush = true;
+  //var snd = new Audio("beep.wav"); // buffers automatically when created
+  //didPush = true;
   //var time = Math.floor((Math.random()*10)+1);
   var time = Math.floor((Math.random()*9)+2);
   time = 1; //debug mode
-  setTimeout(function(){beep = true; snd.play();},time*1000);
+  setTimeout(function(){beep();},time*1000);
+}
+
+  function beep() {
+  	Android.beep();
   }

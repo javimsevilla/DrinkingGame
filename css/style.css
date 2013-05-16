@@ -14,6 +14,21 @@ body {
 	height: 99%;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-----------------------------------
   Estilos para la página principal
   -----------------------------------*/
@@ -46,26 +61,6 @@ body {
 	filter: dropshadow(color=#000, offx=2, offy=2);
 }
 
-.boton-jugar {
-	font-size: 2em;
-	display: block;
-	text-decoration: none;
-	background-color: #00CCCC;
-	-webkit-box-shadow: inset 0px 1px 2px 0px #fff;
-	box-shadow: inset 0px 1px 2px 0px #fff;
-	-webkit-border-radius: 5px;
-    border-radius: 5px;
-	border: 1px solid #008080;
-	margin: 0 auto;
-	width: 80%;
-	text-align: center;
-	color: #fff;
-}
-
-.boton-jugar:active {
-	background-color: #f00;
-}
-
 #reglas {
 	font-family: Arial, Helvetica, sans-serif;
 	width: 80%;
@@ -86,8 +81,42 @@ body {
 	margin-top: 0.8em;
 }
 
+a.boton-jugar {
+	border: 1px solid #00A6A6;
+	font-size: 2em;
+	padding: 20px;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	background: #00D2D2;
+	width: 80%;
+	color: #EBEBEB;
+	text-decoration: none;
+	--webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #fff;
+	box-shadow: inset 0px 1px 0px 0px #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*---------------------------
-  tex para el juego
+  Estilos para el juego
  ----------------------------*/
 
 h1 { 
@@ -116,21 +145,34 @@ h1 {
 }
 
 #player1{
-	background-color: #f78f8f;
+	background-color: rgba(0,210,210,1);
 	border-bottom: 4px solid;
 }
 
 #player2{
 	position: relative;
-	background-color: #0f0;
+	background-color: rgba(255,193,40,1);
 }
 
-#button{
+#button {
+	border: 1px solid #43453A;
+	text-align: center;
+	padding: 20px 0;
+	z-index: 3;
 	position: absolute;
-	top: 45%;
-	left: 45%;
-	width: 30px;
-	height: 50px;
-	background-color: white;
-	z-index: 9;
+	background: #000;
+	color: #fff;
+	font-size: 3em;
+	width: 280px;
+	height: 100px;
+	top: 50%;
+	left: 50%;
+	margin: -50px 0 0 -140px;
+	--webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #7A7A7A;
+	box-shadow: inset 0px 1px 0px 0px #7A7A7A;
+	text-shadow: 0px 0px 20px #fff;
+	filter: dropshadow(color=#fff, offx=0, offy=0);
 }
